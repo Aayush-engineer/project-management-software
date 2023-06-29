@@ -1,9 +1,4 @@
-import { FaTh, FaCommentAlt  } from "react-icons/fa";
-import { BiImageAdd } from "react-icons/bi";
-
-
-import { FcBusinessman , FcAbout , FcAddImage , FcGrid} from "react-icons/fc";
-
+import { FcBusinessman, FcAbout, FcAddImage, FcGrid } from "react-icons/fc";
 
 const menu = [
   {
@@ -18,7 +13,7 @@ const menu = [
   },
   {
     title: "Account",
-    icon: <FcBusinessman/>,
+    icon: <FcBusinessman />,
     childrens: [
       {
         title: "Profile",
