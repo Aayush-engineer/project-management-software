@@ -1,10 +1,10 @@
 .product-detail {
   margin-bottom: 5rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   .card {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     padding: 1rem;
   }
   .detail {
@@ -17,6 +17,16 @@
       padding-left: 2px;
       padding-right: 2px;
       border-radius: 3px;
+    }
+    .heading1 {
+      background-color: rgb(65, 93, 113);
+      border-radius: 15px;
+
+      .footerlinks {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(242, 209, 209);
+      }
     }
     p b {
       color: var(--dark-blue);

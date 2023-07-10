@@ -43,7 +43,7 @@ const ProductSummary = ({ products }) => {
       <div className="info-summary">
         <InfoBox
           icon={productIcon}
-          title={"ongoing Projects"}
+          title={"Ongoing Projects"}
           count={products.length}
           bgColor="card1"
         />

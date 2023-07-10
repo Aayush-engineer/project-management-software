@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { SpinnerImg } from "../../loader/Loader";
 import "./productList.scss";
-import { FaEdit, FaTrashAlt } from "react-icons/fa";
-import { AiOutlineEye } from "react-icons/ai";
+import { FaRegEdit } from "react-icons/fa";
+import { BsEye, BsTrash } from "react-icons/bs";
 import Search from "../../search/Search";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -105,9 +105,9 @@ const ProductList = ({ products, isLoading }) => {
                 <tr>
                   <th>s/n</th>
                   <th>Name</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
+                  <th>project No</th>
+                  <th>cost</th>
+                  <th>project pdc</th>
                   <th>Value</th>
                   <th>Action</th>
                 </tr>
@@ -133,16 +133,16 @@ const ProductList = ({ products, isLoading }) => {
                       <td className="icons">
                         <span>
                           <Link to={`/product-detail/${_id}`}>
-                            <AiOutlineEye size={25} color={"purple"} />
+                            <BsEye size={25} color={"purple"} />
                           </Link>
                         </span>
                         <span>
                           <Link to={`/edit-product/${_id}`}>
-                            <FaEdit size={20} color={"green"} />
+                            <FaRegEdit size={20} color={"green"} />
                           </Link>
                         </span>
                         <span>
-                          <FaTrashAlt
+                          <BsTrash
                             size={20}
                             color={"red"}
                             onClick={() => confirmDelete(_id)}

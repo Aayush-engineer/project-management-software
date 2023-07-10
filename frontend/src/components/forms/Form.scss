@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
 .add-product {
   margin-bottom: 5rem;
 
@@ -10,39 +9,15 @@
     .heading {
       width: 40vw;
       height: 6vh;
-      margin: 40px 0px 0px 0px;
+      margin: 20px 0px 50px 0px;
       border-radius: 0px 15px 15px 0px;
-      background-color: #2f4f7b;
-      display: flex;
-      align-items: center;
+      background-color: #0a1930;
       span {
         font-size: 30px;
         font-weight: 600;
         margin-left: 10px;
         color: rgb(243, 239, 239);
         padding: 3px;
-      }
-    }
-    .heading1 {
-      width: 20vw;
-      height: 4vh;
-      margin: 10px 0px 10px 0px;
-      border-radius: 0px 15px 15px 0px;
-      cursor: pointer;
-      background-color: #284672;
-      display: flex;
-      align-items: center;
-      span {
-        margin-left: 10px;
-        color: rgb(243, 239, 239);
-        padding: 3px;
-
-        .footerlinks {
-          color: red;
-          font-size: 20px;
-          font-weight: bolder;
-          font-family: "Bacasime Antique", serif;
-        }
       }
     }
   }
@@ -59,6 +34,7 @@
     input[type="file"],
     input[type="email"],
     input[type="date"],
+    input[type="address"],
     select,
     input[type="password"] {
       display: block;
@@ -67,7 +43,7 @@
       padding: 1rem;
       margin: 1rem auto;
       width: 100%;
-      border: 2px solid #5065ac;
+      border: 2px solid #313b5c;
       border-radius: 3px;
       outline: none;
     }

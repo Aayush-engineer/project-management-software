@@ -5,8 +5,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import menu from "../../data/sidebar";
 import SidebarItem from "./SidebarItem";
 import { useNavigate } from "react-router-dom";
-import myImage from '../../assets/drdo_logo_m.png';
-
+import myImage from "../../assets/drdo_logo_m.png";
 
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -22,9 +21,9 @@ const Sidebar = ({ children }) => {
       <div className="sidebar" style={{ width: isOpen ? "230px" : "60px" }}>
         <div className="top_section">
           <div className="logo" style={{ display: isOpen ? "block" : "none" }}>
-
-            <img src={myImage}
-              style={{ cursor: "pointer", height: "50px" , margin : "auto"}}
+            <img
+              src={myImage}
+              style={{ cursor: "pointer", height: "50px", margin: "auto" }}
               onClick={goHome}
             />
           </div>

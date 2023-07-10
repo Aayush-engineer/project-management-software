@@ -2,6 +2,7 @@ import React from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import Card from "../../card/Card";
+import { Link } from "react-router-dom";
 
 import "./ProductForm.scss";
 
@@ -35,7 +36,7 @@ const ProductForm = ({
                 <img src={imagePreview} alt="product" />
               </div>
             ) : (
-              <p>No image set for this poduct.</p>
+              <p>No image set for this project</p>
             )}
           </Card>
           <label>Project Name:</label>
@@ -47,32 +48,38 @@ const ProductForm = ({
             onChange={handleInputChange}
           />
 
-          <label>Project Category:</label>
+          <label>Project No:</label>
           <input
             type="text"
-            placeholder="Project Category"
+            placeholder="Project number"
             name="category"
             value={product?.category}
             onChange={handleInputChange}
           />
 
-          <label>Project Price:</label>
+          <label>Cost of project</label>
           <input
             type="text"
-            placeholder="Project Price"
+            placeholder="Project cost"
             name="price"
             value={product?.price}
             onChange={handleInputChange}
           />
 
-          <label>Project Quantity:</label>
+          {/* <label>Project Quantity:</label> */}
+          <label>Project pdc:</label>
+
           <input
             type="text"
-            placeholder="Project Quantity"
+            placeholder="Project pdc"
             name="quantity"
             value={product?.quantity}
             onChange={handleInputChange}
           />
+
+          <label> Date of senction:</label>
+
+          <input type="text" placeholder="date of project" name="date" />
 
           <label>Project Description:</label>
           <ReactQuill
@@ -84,11 +91,52 @@ const ProductForm = ({
           />
 
           <div className="--my">
-            <button type="submit" className="--btn --btn-primary">
+            <button type="submit" className="--btn btn">
               Save Project
             </button>
           </div>
         </form>
+
+        <div className="heading">
+          <span>MORE DETAILS</span>
+        </div>
+
+        <div className="heading1">
+          <span>
+            <Link className="footerlinks --btn" to="/add-demand">
+              Add demand
+            </Link>
+          </span>
+        </div>
+
+        <div className="heading1">
+          <span>
+            <Link className="footerlinks --btn" to="/add-supplyorder">
+              Enter supply order detail
+            </Link>
+          </span>
+        </div>
+        <div className="heading1">
+          <span>
+            <Link className="footerlinks --btn" to="/add-supplyorder">
+              Enter Rn detail
+            </Link>
+          </span>
+        </div>
+        <div className="heading1 ">
+          <span>
+            <Link className="footerlinks --btn" to="/add-supplyorder">
+              Enter crv detail
+            </Link>
+          </span>
+        </div>
+        <div className="heading1">
+          <span>
+            <Link className="footerlinks --btn" to="/add-supplyorder">
+              Enter payment detail
+            </Link>
+          </span>
+        </div>
       </Card>
     </div>
   );

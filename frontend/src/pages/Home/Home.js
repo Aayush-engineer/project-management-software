@@ -1,18 +1,16 @@
 import React from "react";
-import { RiProductHuntLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import "./Home.scss";
 import heroImg from "../../assets/front.png";
 import { ShowOnLogin, ShowOnLogout } from "../../components/protect/HiddenLink";
-import myImage from '../../assets/drdo_logo.png';
+import myImage from "../../assets/drdo_logo.png";
 
 const Home = () => {
   return (
     <div className="home">
       <nav className="container --flex-between ">
         <div className="logo">
-          <img src={myImage} size={35}/>
-          
+          <img src={myImage} size={35} />
         </div>
 
         <ul className="home-links">
@@ -31,7 +29,9 @@ const Home = () => {
           <ShowOnLogin>
             <li>
               <button className="--btn --btn-primary">
-                <Link to="/dashboard">Dashboard</Link>
+                <Link to="/dashboard" style={{ fontSize: "20px" }}>
+                  Dashboard
+                </Link>
               </button>
             </li>
           </ShowOnLogin>
@@ -40,9 +40,11 @@ const Home = () => {
       {/* HERO SECTION */}
       <section className="container hero">
         <div className="hero-text">
-          <h2>Project {"&"} Management Solution</h2>
+          <h2>Project Management Software</h2>
           <p>
-          Assign Projects, Manage Staff, Keep Track of Timelines & More. Start a Free Trial. Easily Integrate With Over a Dozen Apps. Manage Systems and Track Hours in One Place.
+            Assign Projects, Manage Staff, Keep Track of Timelines & More. Start
+            a Free Trial. Easily Integrate With Over a Dozen Apps. Manage
+            Systems and Track Hours in One Place.
           </p>
         </div>
 
@@ -50,15 +52,6 @@ const Home = () => {
           <img src={heroImg} alt="Inventory" />
         </div>
       </section>
-    </div>
-  );
-};
-
-const NumberText = ({ num, text }) => {
-  return (
-    <div className="--mr">
-      <h3 className="--color-white">{num}</h3>
-      <p className="--color-white">{text}</p>
     </div>
   );
 };

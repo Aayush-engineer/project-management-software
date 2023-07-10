@@ -8,6 +8,7 @@ import Card from "../../card/Card";
 import { SpinnerImg } from "../../loader/Loader";
 import "./ProductDetail.scss";
 import DOMPurify from "dompurify";
+import { Link } from "react-router-dom";
 
 const ProductDetail = () => {
   useRedirectLoggedOutUser("/login");
@@ -48,22 +49,60 @@ const ProductDetail = () => {
             </Card>
             <hr />
             <h4>
-              <span className="badge">Name: </span> &nbsp; {product.name}
+              <span className="badge">Name of Project: </span> &nbsp;{" "}
+              {product.name}
             </h4>
             <p>
-              <b>&rarr; Category : </b> {product.category}
+              <b>&rarr; project no : </b> {product.category}
             </p>
             <p>
-              <b>&rarr; Price : </b> {"$"}
+              <b>&rarr; Cost of project : </b> {"$"}
               {product.price}
             </p>
             <p>
-              <b>&rarr; level of project : </b> {product.quantity}
+              <b>&rarr; Project pdc : </b> {product.quantity}
             </p>
             <p>
               <b>&rarr; Total Value of project : </b> {"$"}
               {product.price * product.quantity}
             </p>
+
+            <div className="heading1">
+              <span>
+                <Link className="footerlinks --btn" to="/add-demand">
+                  demand Details
+                </Link>
+              </span>
+            </div>
+
+            <div className="heading1">
+              <span>
+                <Link className="footerlinks --btn" to="/add-supplyorder">
+                  supply order detail
+                </Link>
+              </span>
+            </div>
+            <div className="heading1">
+              <span>
+                <Link className="footerlinks --btn" to="/add-supplyorder">
+                  Rn detail of project
+                </Link>
+              </span>
+            </div>
+            <div className="heading1 ">
+              <span>
+                <Link className="footerlinks --btn" to="/add-supplyorder">
+                  crv detail
+                </Link>
+              </span>
+            </div>
+            <div className="heading1">
+              <span>
+                <Link className="footerlinks --btn" to="/add-supplyorder">
+                  payment detail
+                </Link>
+              </span>
+            </div>
             <hr />
             <div
               dangerouslySetInnerHTML={{

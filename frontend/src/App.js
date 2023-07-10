@@ -20,6 +20,8 @@ import EditProduct from "./pages/editProduct/EditProduct";
 import Profile from "./pages/profile/Profile";
 import EditProfile from "./pages/profile/EditProfile";
 import Contact from "./pages/contact/Contact";
+import Formss from "./components/forms/Formss";
+import Formsss from "./components/forms/Formsss";
 
 axios.defaults.withCredentials = true;
 
@@ -54,12 +56,33 @@ function App() {
             </Sidebar>
           }
         />
+
         <Route
           path="/add-product"
           element={
             <Sidebar>
               <Layout>
                 <AddProduct />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/add-demand"
+          element={
+            <Sidebar>
+              <Layout>
+                <Formss />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/add-supplyorder"
+          element={
+            <Sidebar>
+              <Layout>
+                <Formsss />
               </Layout>
             </Sidebar>
           }
